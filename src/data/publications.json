@@ -1,0 +1,298 @@
+{
+  "publications": [
+    {
+      "id": 1,
+      "authors": "Misaros, M.; Stan, O.P.; Enyedi, S.; Stan, A.; Donca, I.; Miclea, L.C.",
+      "title": "A Method for Assessing the Reliability of the Pepper Robot in Handling Office Documents: A Case Study",
+      "journal": "Biomimetics",
+      "year": 2024,
+      "volume": "9",
+      "issue": "9",
+      "pages": "558",
+      "type": "journal",
+      "link": "https://www.mdpi.com/2313-7673/9/9/558"
+    },
+    {
+      "id": 2,
+      "authors": "IC Donca, OP Stan, M. Misaros, A. Stan, L. Miclea",
+      "title": "Comprehensive Security for IoT Devices with Kubernetes and Raspberry Pi Cluster",
+      "journal": "Electronics",
+      "year": 2024,
+      "volume": "13",
+      "issue": "9",
+      "pages": "1613",
+      "type": "journal",
+      "link": "https://www.mdpi.com/2079-9292/13/9/1613"
+    },
+    {
+      "id": 3,
+      "authors": "S. Gundala, MM Basha, V. Madhumna, OP Stan",
+      "title": "Input Voltage-Level Driven Split-Input Inverter Level Shifter for Nanoscale Applications",
+      "journal": "Electronics",
+      "year": 2024,
+      "volume": "13",
+      "issue": "6",
+      "pages": "1115",
+      "type": "journal",
+      "link": "https://www.mdpi.com/2079-9292/13/6/1115"
+    },
+    {
+      "id": 4,
+      "authors": "Roy, P.P.; Teji, V.; Kandula, S.R.; Sowmya, K.V.; Stan, A.I.; Stan, O.P.",
+      "title": "Secure Healthcare Model Using Multi-Step Deep Q Learning Network in Internet of Things",
+      "journal": "Electronics",
+      "year": 2024,
+      "volume": "13",
+      "issue": "3",
+      "pages": "669",
+      "type": "journal",
+      "link": "https://www.mdpi.com/2079-9292/13/3/669"
+    },
+    {
+      "id": 5,
+      "authors": "Urs, P.; Muresan, V.; Hulea, M.; Stefan, I. (2024)",
+      "title": "Securing the ¹⁸O Oxygen Isotope Separation Process: A Focus on Network Devices and Access Servers",
+      "journal": "ICoRSE 2024, vol 1129, Springer",
+      "year": 2024,
+      "type": "conference",
+      "link": "https://link.springer.com/chapter/10.1007/978-3-031-70670-7_26"
+    },
+    {
+      "id": 6,
+      "authors": "Cham, Sudhakar, M.V.; Stan, O.P.",
+      "title": "Implementation of High-Speed Compact Level-Up Shifter for Nano-Scale Applications",
+      "journal": "Electronics",
+      "year": 2023,
+      "volume": "12",
+      "issue": "24",
+      "pages": "5015",
+      "type": "journal",
+      "link": "https://www.mdpi.com/2079-9292/12/24/5015"
+    },
+    {
+      "id": 7,
+      "authors": "G. Simoc, O. M.; Stefan, I. A.; Brîciu, V.; Muresan, V.; Citan, I.; Abrudean, M.; Unguresan, M.-L.; Miron, R.; Slavici, E.; Nanu, M.; et al.",
+      "title": "Solution for the Mathematical Modeling and Future Prediction of the COVID-19 Pandemic Dynamics",
+      "journal": "Applied Sciences",
+      "year": 2023,
+      "volume": "13",
+      "issue": "13",
+      "pages": "7971",
+      "type": "journal",
+      "link": "https://doi.org/10.3390/app13137971"
+    },
+    {
+      "id": 8,
+      "authors": "Ventrapragada T., Sowmya K.V., Kandula S.R., Stan A., Stan O.P.",
+      "title": "A Hybrid Retina Net Classifier for Thermal Imaging",
+      "journal": "Applied Sciences",
+      "year": 2023,
+      "volume": "13",
+      "issue": "14",
+      "pages": "8525",
+      "type": "journal",
+      "link": "https://www.mdpi.com/2076-3417/13/14/8525"
+    },
+    {
+      "id": 9,
+      "authors": "M. Misaros, O.P. Stan, I. Donca, L. Miclea",
+      "title": "Autonomous Robots for Services - State of the art, Challenges, and Research Areas",
+      "journal": "Sensors",
+      "year": 2023,
+      "volume": "23",
+      "issue": "10",
+      "pages": "4962",
+      "type": "journal",
+      "link": "https://www.mdpi.com/1424-8220/23/10/4962"
+    },
+    {
+      "id": 10,
+      "authors": "Stefan, I. et al. (2023)",
+      "title": "Technology and Education as Drivers of the Fourth Industrial Revolution Through the Lens of the New Science of Learning",
+      "journal": "HCI 2023, LNCS, vol 14040, Springer",
+      "year": 2023,
+      "type": "conference",
+      "link": "https://www.mdpi.com/2076-3417/13/13/7971"
+    },
+    {
+      "id": 11,
+      "authors": "M. I. Donca, V. A. Dobra, A. A. Dobra, G. Harja, S. Folea and V. D. Gavra",
+      "title": "Long-Range Network of Air Quality Index Sensors in an Urban Area",
+      "journal": "Sensors",
+      "year": 2023,
+      "volume": "23",
+      "pages": "9001",
+      "type": "journal",
+      "link": "https://www.techscience.com/iasc/v35n1/48113"
+    },
+    {
+      "id": 12,
+      "authors": "O. Bunta, D. Festila, V. Muresan, T. Colosi, O. Stan, M. Unguresan, M. Bacuit",
+      "title": "Mathematical Modeling and Digital Simulation of Teeth Dynamics for the Approximation of Orthodontic Treatment Duration",
+      "journal": "Applied Sciences",
+      "year": 2022,
+      "type": "journal",
+      "link": "https://www.mdpi.com/1424-8220/22/22/8872"
+    },
+    {
+      "id": 13,
+      "authors": "A. Pop, A. Fanca, D. Gota, H. Vălean",
+      "title": "Monitoring and Prediction of Indoor Air Quality for Enhanced Occupational Health",
+      "journal": "Intelligent Automation & Soft Computing",
+      "year": 2023,
+      "volume": "35",
+      "issue": "1",
+      "pages": "925-940",
+      "type": "journal",
+      "link": "https://www.mdpi.com/1424-8220/22/12/4637"
+    },
+    {
+      "id": 14,
+      "authors": "Novac O.C., M. C. Miroda, C.M. Novac, N. Bizon, M. Oproescu, O.P. Stan, C.E. Gordan",
+      "title": "Analysis of the Application Efficiency of TensorFlow and PyTorch in Convolutional Neural Network",
+      "journal": "Sensors",
+      "year": 2022,
+      "volume": "22",
+      "pages": "8872",
+      "type": "journal",
+      "link": "https://www.mdpi.com/2227-9717/10/2/219"
+    },
+    {
+      "id": 15,
+      "authors": "A. Ciobotaru, D. I., Donca, I. C., O.P. Stan, M. Misaros, D. Gota",
+      "title": "Method for Continuous Integration and Deployment Using a Pipeline Generator for Agile Software Projects",
+      "journal": "Sensors",
+      "year": 2022,
+      "volume": "22",
+      "issue": "12",
+      "pages": "4637",
+      "type": "journal",
+      "link": "https://ieeexplore.ieee.org/document/9872818"
+    },
+    {
+      "id": 16,
+      "authors": "P. A. G. Benoiu, E. H. Dulf, I.A. Stefan",
+      "title": "Flexible Augmented Reality-Based Health Solution for Medication Weight Establishment",
+      "journal": "Processes",
+      "year": 2022,
+      "volume": "10",
+      "issue": "2",
+      "pages": "219",
+      "type": "journal",
+      "link": "https://www.mdpi.com/1424-8220/21/18/6220"
+    },
+    {
+      "id": 17,
+      "authors": "A. Ciobotaru, D. I. Gota, A. Pop, O. Stan, A. Fanca, C. Domuta, H. Vălean, L. Miclea",
+      "title": "Demographic Attributes Classification via Convolutional Neural Networks: A Proposed Solution",
+      "journal": "Proc. of 2022 ICECET",
+      "year": 2022,
+      "type": "conference",
+      "link": "https://www.techscience.com/cmc/v70n1/44340"
+    },
+    {
+      "id": 18,
+      "authors": "S. Corches, M. Daraban, L. Miclea",
+      "title": "Availability of a RFID Object Identification System in IoT Environment",
+      "journal": "Sensors",
+      "year": 2021,
+      "volume": "21",
+      "issue": "18",
+      "pages": "6220",
+      "type": "journal",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/34502811/"
+    },
+    {
+      "id": 19,
+      "authors": "H. Patel, D. S. Rajput, O. P. Stan, L. C. Miclea",
+      "title": "A New Fuzzy Adaptive Algorithm to Classify Imbalanced Data",
+      "journal": "CMC-Computers, Materials & Continua",
+      "year": 2021,
+      "volume": "70",
+      "issue": "1",
+      "type": "journal",
+      "link": "https://www.mdpi.com/1424-8220/21/14/4714"
+    },
+    {
+      "id": 20,
+      "authors": "C. Muresan, I. Birs, E. Dulf, D. Copot, L. Miclea",
+      "title": "A Review of Recent Advances in Fractional Order Sensing and Filtering Techniques",
+      "journal": "Sensors",
+      "year": 2021,
+      "volume": "21",
+      "issue": "14",
+      "pages": "4714, article number: 5620",
+      "type": "journal",
+      "link": "https://ieeexplore.ieee.org/document/9129954"
+    },
+    {
+      "id": 21,
+      "authors": "tan, O.P.; Enyedi, S.; Corches, C.; Flonta, S.; Stefan, I.; Gota, D.; Miclea, L.",
+      "title": "Method to Increase Dependability in a Cloud-Fog-Edge Environment",
+      "journal": "Sensors",
+      "year": 2021,
+      "volume": "21",
+      "pages": "4714",
+      "type": "journal",
+      "link": "https://univagora.ro/jour/index.php/ijccc/article/view/4260"
+    },
+    {
+      "id": 22,
+      "authors": "C. Corches, M. Daraban, O. Stan, Szilárd Enyedi, L. Miclea",
+      "title": "Interconnection of IoT Systems with Cloud-Fog-Edge architectures: Concept and Challenges",
+      "journal": "Control Engineering And Applied Informatics",
+      "year": 2021,
+      "volume": "vol 23",
+      "issue": "1",
+      "pages": "pp. 60-71",
+      "type": "journal",
+      "link": "https://ieeexplore.ieee.org/abstract/document/9129910"
+    },
+    {
+      "id": 23,
+      "authors": "I. Stefan, L. Miclea and H. Vălean",
+      "title": "Towards Testing Considerations Of Experimental Decision Support System Design",
+      "journal": "2020 IEEE International Conference on Automation, Quality and Testing, Robotics (AQTR)",
+      "year": 2020,
+      "type": "conference",
+      "link": "https://link.springer.com/chapter/10.1007/978-981-13-6207-1_49"
+    },
+    {
+      "id": 24,
+      "authors": "I. Muntean, G. D. Moiş, S. C. Folea",
+      "title": "Development and Analysis of a Low Cost IoT Sensor for Urban Environmental Monitoring",
+      "journal": "International Journal of Computers Communications & Control",
+      "year": 2021,
+      "volume": "16",
+      "issue": "5",
+      "type": "journal",
+      "link": ""
+    },
+    {
+      "id": 25,
+      "authors": "A. Soureti, C. Dehutean, S. Enyedi, L. Miclea",
+      "title": "Using Cognitive Services within CPS/SCADA Systems Federations - Concepts, Research Areas and Challenges",
+      "journal": "2020 IEEE International Conference on Automation, Quality and Testing, Robotics (AQTR)",
+      "year": 2020,
+      "type": "conference",
+      "link": ""
+    },
+    {
+      "id": 26,
+      "authors": "O. Stan, L. Miclea",
+      "title": "New Era for Technology in Healthcare Powered by GDPR and Blockchain",
+      "journal": "MediTech, Cluj Napoca, Romania, OCT 17-20, 2018, Book Series: IFMBE Proceedings, Volume: 71, Pages: 311-317, Springer",
+      "year": 2018,
+      "type": "conference",
+      "link": ""
+    }
+  ],
+  "patents": [
+    {
+      "id": 1,
+      "authors": "J. Figueras, L. Miclea, G. Mois",
+      "title": "Method for the dynamic voltage scaling in an arithmetic-logic unit based on on-line error detection",
+      "reference": "no. OSIM: 130282/30.03.2018"
+    }
+  ]
+}

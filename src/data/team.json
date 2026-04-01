@@ -1,0 +1,184 @@
+[
+  {
+    "id": 1,
+    "name": "Prof. Eng. Liviu MICLEA, PhD",
+    "role": "Director",
+    "category": "professor",
+    "link": "https://users.utcluj.ro/~miclea/"
+  },
+  {
+    "id": 2,
+    "name": "Prof. Eng. Honoriu VĂLEAN, PhD",
+    "role": "Professor",
+    "category": "professor",
+    "link": "https://users.utcluj.ro/~valean/"
+  },
+  {
+    "id": 3,
+    "name": "Prof. Eng. Silviu FOLEA, PhD",
+    "role": "Professor",
+    "category": "professor",
+    "link": "https://users.utcluj.ro/~sfolea/"
+  },
+  {
+    "id": 4,
+    "name": "Prof. Eng. Ovidiu STAN, PhD",
+    "role": "Professor",
+    "category": "professor",
+    "link": "https://users.utcluj.ro/~ostan/"
+  },
+  {
+    "id": 5,
+    "name": "Assoc. Prof. Eng. ENYEDI Szilárd, PhD",
+    "role": "Associate Professor",
+    "category": "associate",
+    "link": "https://users.utcluj.ro/~enyedi/"
+  },
+  {
+    "id": 6,
+    "name": "Assoc. Prof. Eng. Dan GOȚA, PhD",
+    "role": "Associate Professor",
+    "category": "associate",
+    "link": "https://users.utcluj.ro/~dgota/"
+  },
+  {
+    "id": 7,
+    "name": "Lecturer Eng. Iulia ȘTEFAN, PhD",
+    "role": "Lecturer",
+    "category": "lecturer",
+    "link": "https://users.utcluj.ro/~istefan/"
+  },
+  {
+    "id": 8,
+    "name": "Lecturer Eng. Cosmina CORCHES, PhD",
+    "role": "Lecturer",
+    "category": "lecturer",
+    "link": "https://users.utcluj.ro/~ccorches/"
+  },
+  {
+    "id": 9,
+    "name": "Lecturer Eng. Adela POP, PhD",
+    "role": "Lecturer",
+    "category": "lecturer",
+    "link": "https://users.utcluj.ro/~apop/"
+  },
+  {
+    "id": 10,
+    "name": "Lecturer Eng. Alexandra FANCA, PhD",
+    "role": "Lecturer",
+    "category": "lecturer",
+    "link": "https://users.utcluj.ro/~afanca/"
+  },
+  {
+    "id": 11,
+    "name": "Lecturer Eng. Claudiu DOMUTA, PhD",
+    "role": "Lecturer",
+    "category": "lecturer",
+    "link": "https://users.utcluj.ro/~cdomuta/"
+  },
+  {
+    "id": 12,
+    "name": "Assist. Eng. Marius NISAROI",
+    "role": "Assistant",
+    "category": "assistant",
+    "link": "#"
+  },
+  {
+    "id": 13,
+    "name": "Eng. Henriette-Helena FUTO",
+    "role": "PhD Student",
+    "category": "phd",
+    "link": "#"
+  },
+  {
+    "id": 14,
+    "name": "Eng. Dana-Elena NIȚI",
+    "role": "PhD Student",
+    "category": "phd",
+    "link": "#"
+  },
+  {
+    "id": 15,
+    "name": "Alexandru STANCIU",
+    "role": "PhD Student",
+    "category": "phd",
+    "link": "#"
+  },
+  {
+    "id": 16,
+    "name": "Eng. Pavel-Alexandru BEJAN",
+    "role": "PhD Student",
+    "category": "phd",
+    "link": "#"
+  },
+  {
+    "id": 17,
+    "name": "Eng. Alexandru CIOBOTARU",
+    "role": "PhD Student",
+    "category": "phd",
+    "link": "#"
+  },
+  {
+    "id": 18,
+    "name": "Eng. Tudor COVRIG",
+    "role": "PhD Student",
+    "category": "phd",
+    "link": "#"
+  },
+  {
+    "id": 19,
+    "name": "Eng. Lucian FARMATHY-POP",
+    "role": "PhD Student",
+    "category": "phd",
+    "link": "#"
+  },
+  {
+    "id": 20,
+    "name": "Eng. Alexandra-Elena DOBRE",
+    "role": "PhD Student",
+    "category": "phd",
+    "link": "#"
+  },
+  {
+    "id": 21,
+    "name": "Eng. Vlăduț DOBRA",
+    "role": "PhD Student",
+    "category": "phd",
+    "link": "#"
+  },
+  {
+    "id": 22,
+    "name": "Eng. Andreea MUSCAN",
+    "role": "PhD Student",
+    "category": "phd",
+    "link": "#"
+  },
+  {
+    "id": 23,
+    "name": "Eng. Razvan DOLOGA",
+    "role": "PhD Student",
+    "category": "phd",
+    "link": "#"
+  },
+  {
+    "id": 24,
+    "name": "Eng. Bogdan DRĂGHICI",
+    "role": "PhD Student",
+    "category": "phd",
+    "link": "#"
+  },
+  {
+    "id": 25,
+    "name": "Eng. George FLUTUR",
+    "role": "PhD Student",
+    "category": "phd",
+    "link": "#"
+  },
+  {
+    "id": 26,
+    "name": "Eng. Alexandru JIBOTEAN",
+    "role": "PhD Student",
+    "category": "phd",
+    "link": "#"
+  }
+]

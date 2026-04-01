@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "years": "2024-2028",
+    "title": "Cybersecurity Seminars",
+    "description": "TUCN project, funded by the Google.org Cybersecurity Seminars Program",
+    "link": "https://cybersecurityseminars.utcluj.ro/"
+  },
+  {
+    "id": 2,
+    "years": "2024-2025",
+    "title": "FortifyAI: Enhancing Efficiency, Reliability, and Security through Integrated HW-SW Co-Design for AI Algorithms",
+    "description": "Ro-Fr Bilateral Cooperation, Ecole Centrale de Lyon",
+    "link": ""
+  },
+  {
+    "id": 3,
+    "years": "2021-2023",
+    "title": "The Innovative European University of Technology (Inno-EUT+)",
+    "description": "A HEI Initiative project aiming to enhance the innovation and entrepreneurial capacity of a new European University Alliance, the European University of Technology (EUT+)",
+    "link": "https://innoeut.utcluj.ro/"
+  },
+  {
+    "id": 4,
+    "years": "2019-2022",
+    "title": "ROBIN – Robots and Society: Cognitive Systems for Personal Robots and Autonomous Vehicles",
+    "description": "",
+    "link": ""
+  },
+  {
+    "id": 5,
+    "years": "2018",
+    "title": "POCOCI2018",
+    "description": "",
+    "link": ""
+  },
+  {
+    "id": 6,
+    "years": "2014-2017",
+    "title": "F2S: SCADA Federation - Collaborative Instrument for Water Management – Someș River Pilot Application",
+    "description": "National PN2-Partnerships project",
+    "link": "http://193.226.5.107/f2s/pagina/"
+  },
+  {
+    "id": 7,
+    "years": "2013-2016",
+    "title": "Use of commercial drones for autonomous maintenance services in railways",
+    "description": "Cooperation with Siemens company",
+    "link": ""
+  },
+  {
+    "id": 8,
+    "years": "2014-2015",
+    "title": "Cluj-Napoca: Next Generation Brained City - Software design for service monitoring at the level of the medical network, through innovative solution integration",
+    "description": "Sectoral Operational Programme 'Increase of Economic Competitiveness' (POSCoCE) project",
+    "link": ""
+  },
+  {
+    "id": 9,
+    "years": "2013-2017",
+    "title": "ProSEco: Collaborative environment for design of Ami enhanced product-services integrating highly personalised innovative functions with minimal ecological footprint along life cycle and of their production processes based on collaborative environments",
+    "description": "European FP7 project",
+    "link": ""
+  },
+  {
+    "id": 10,
+    "years": "2013-2014",
+    "title": "CyClosSe: Designing Cloud-based Self-healing Cyber-Physical Systems",
+    "description": "Ro-It Bilateral Cooperation with Politecnico di Torino",
+    "link": "https://cordis.europa.eu/projects/rcn/109191_en.html"
+  }
+]
