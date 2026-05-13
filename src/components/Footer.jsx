@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import logoDesy from '../assets/logo-desy.png'
+import SyncStatus from './SyncStatus'
 
 export default function Footer() {
   return (
@@ -70,6 +71,7 @@ export default function Footer() {
         <div className="footer-divider">
           <div className="footer-bottom">
             <span>© {new Date().getFullYear()} Dependable Systems (DeSy) — UTCN. All rights reserved.</span>
+            <SyncStatus />
             <span>
               {new Date().toLocaleString('en-US', { month: 'long', year: 'numeric' })}
             </span>

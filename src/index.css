@@ -52,6 +52,37 @@
   --transition-fast: 0.15s ease;
   --transition-normal: 0.3s ease;
   --transition-slow: 0.5s ease;
+
+  /* Theme-switchable semantic tokens (light defaults) */
+  --surface-card: #fff;
+  --text-heading: var(--desy-navy);
+  color-scheme: light;
+}
+
+/* Dark theme — remaps gray ramp, surfaces, and shadows.
+   Brand colors (orange, navy) stay constant; navy becomes a structural color
+   rather than a text color, so headings switch to a light token. */
+[data-theme="dark"] {
+  --surface-card: #1B2A4A;
+  --text-heading: #F3F4F6;
+
+  --gray-50:  #0F1A30;
+  --gray-100: #16233E;
+  --gray-200: #2C3E6B;
+  --gray-300: #3A4F80;
+  --gray-400: #6B7280;
+  --gray-500: #9CA3AF;
+  --gray-600: #CBD5E1;
+  --gray-700: #E5E7EB;
+  --gray-800: #F3F4F6;
+  --gray-900: #F9FAFB;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.55);
+  --shadow-xl: 0 24px 56px rgba(0, 0, 0, 0.6);
+
+  color-scheme: dark;
 }
 
 /* --- Reset & Base --- */
@@ -80,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.15;
-  color: var(--desy-navy);
+  color: var(--text-heading);
   letter-spacing: -0.02em;
 }
 
@@ -930,13 +961,13 @@ img {
 }
 
 .section-alt {
-  background: #fff;
+  background: var(--surface-card);
 }
 
 /* --- Cards --- */
 .desy-card {
   position: relative;
-  background: #fff;
+  background: var(--surface-card);
   border: 1px solid var(--gray-200);
   border-radius: var(--radius-md);
   padding: 2rem 1.8rem 1.8rem;
@@ -972,7 +1003,7 @@ img {
 }
 
 .desy-card:hover {
-  border-color: var(--desy-navy);
+  border-color: var(--text-heading);
   box-shadow: var(--shadow-lg);
   transform: translateY(-4px);
 }
@@ -1036,7 +1067,7 @@ img {
 /* --- Schematic Diagram (Architecture & Equipment) --- */
 .schematic-card {
   position: relative;
-  background: #fff;
+  background: var(--surface-card);
   border: 1px solid var(--gray-200);
   border-radius: 4px;
   padding: 2rem 1.8rem 1.5rem;
@@ -1048,7 +1079,7 @@ img {
   position: absolute;
   width: 14px;
   height: 14px;
-  border: 1px solid var(--desy-navy);
+  border: 1px solid var(--text-heading);
 }
 .schematic-card::before {
   top: -1px;
@@ -1125,7 +1156,7 @@ img {
   font-size: 0.66rem;
   color: var(--gray-500);
   letter-spacing: 0.06em;
-  background: #fff;
+  background: var(--surface-card);
   padding: 2px 4px;
   z-index: 1;
 }
@@ -1135,8 +1166,8 @@ img {
 .schematic-row[data-accent="blue"]   { border-left-color: var(--accent-blue); }
 
 .schematic-row:hover {
-  background: #fff;
-  border-color: var(--desy-navy);
+  background: var(--surface-card);
+  border-color: var(--text-heading);
   transform: translateX(4px);
 }
 
@@ -1152,7 +1183,7 @@ img {
   font-family: var(--font-display);
   font-size: 0.95rem;
   font-weight: 600;
-  color: var(--desy-navy);
+  color: var(--text-heading);
   letter-spacing: -0.01em;
 }
 
@@ -1207,7 +1238,7 @@ img {
 
 /* --- Team Cards --- */
 .team-card {
-  background: #fff;
+  background: var(--surface-card);
   border: 1px solid var(--gray-200);
   border-radius: var(--radius-lg);
   padding: 1.5rem;
@@ -1327,7 +1358,7 @@ img {
   padding: 0.4rem 0.9rem;
   border: 1px solid var(--gray-300);
   border-radius: 2px;
-  background: #fff;
+  background: var(--surface-card);
   color: var(--gray-600);
   font-family: var(--font-mono);
   font-size: 0.72rem;
@@ -1351,7 +1382,7 @@ img {
 
 /* --- Publication Year Histogram --- */
 .pub-histogram {
-  background: #fff;
+  background: var(--surface-card);
   border: 1px solid var(--gray-200);
   border-radius: 4px;
   padding: 1.2rem 1.4rem 1rem;
@@ -1558,7 +1589,7 @@ img {
 
 /* --- Publication Items --- */
 .pub-item {
-  background: #fff;
+  background: var(--surface-card);
   border: 1px solid var(--gray-200);
   border-radius: var(--radius-md);
   padding: 1.3rem 1.5rem;
@@ -1596,14 +1627,14 @@ img {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 1rem;
-  color: var(--desy-navy);
+  color: var(--text-heading);
   margin-bottom: 0.35rem;
   line-height: 1.35;
   letter-spacing: -0.01em;
 }
 
 .pub-item .pub-title a {
-  color: var(--desy-navy);
+  color: var(--text-heading);
   transition: color var(--transition-fast);
 }
 
@@ -1686,7 +1717,7 @@ img {
 
 .course-card {
   position: relative;
-  background: #fff;
+  background: var(--surface-card);
   border: 1px solid var(--gray-200);
   border-radius: 4px;
   padding: 1.6rem 1.6rem 1.2rem;
@@ -1717,7 +1748,7 @@ img {
 }
 
 .course-card:hover {
-  border-color: var(--desy-navy);
+  border-color: var(--text-heading);
   box-shadow: var(--shadow-lg);
   transform: translateY(-3px);
 }
@@ -1750,7 +1781,7 @@ img {
   font-family: var(--font-display);
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--desy-navy);
+  color: var(--text-heading);
   margin: 0;
   letter-spacing: -0.01em;
   line-height: 1.25;
@@ -1838,7 +1869,7 @@ img {
 
 /* --- Project Timeline --- */
 .project-item {
-  background: #fff;
+  background: var(--surface-card);
   border: 1px solid var(--gray-200);
   border-radius: 4px;
   padding: 1.6rem 1.8rem;
@@ -1912,7 +1943,7 @@ img {
 
 /* --- Resources / Services Cards --- */
 .service-card {
-  background: #fff;
+  background: var(--surface-card);
   border: 1px solid var(--gray-200);
   border-radius: var(--radius-lg);
   padding: 2rem;
@@ -2146,7 +2177,7 @@ img {
   font-family: var(--font-mono);
   font-size: 0.85rem;
   color: var(--gray-800);
-  background: #fff;
+  background: var(--surface-card);
   transition: all var(--transition-fast);
 }
 
@@ -2322,4 +2353,139 @@ img {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--gray-500);
+}
+
+/* --- Smooth theme transition (only on a few high-traffic properties to
+   avoid flickering animated UI like the scroll-progress bar) --- */
+body,
+.section,
+.section-alt,
+.desy-card,
+.schematic-card,
+.schematic-row,
+.team-card,
+.pub-histogram,
+.pub-item,
+.course-card,
+.project-item,
+.service-card,
+.contact-table,
+.search-box input,
+.filter-btn {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* --- Dark theme element-specific fixes ---
+   Cases where the original styling uses --desy-navy as a fill/background; in
+   dark mode that becomes invisible against the navy card surface, so we swap
+   to a lighter or orange accent. */
+[data-theme="dark"] .pub-item .pub-year {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-heading);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .pub-histogram__all.is-active {
+  background: var(--desy-orange);
+  border-color: var(--desy-orange);
+  color: #fff;
+}
+
+[data-theme="dark"] .pub-histogram__all.is-active .pub-histogram__all-count {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+[data-theme="dark"] .teaching-stats {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="dark"] .desy-footer {
+  background: #060B18;
+}
+
+/* The .pub-item pub-type-badge tints are rgba over a white card by design;
+   in dark mode the rgba mix shifts oddly, so re-tint at higher alpha. */
+[data-theme="dark"] .pub-item .pub-type-badge.journal {
+  background: rgba(20, 184, 166, 0.18);
+}
+[data-theme="dark"] .pub-item .pub-type-badge.conference {
+  background: rgba(59, 130, 246, 0.18);
+}
+
+/* --- Sync Status (footer) --- */
+.sync-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.sync-status__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-green);
+  box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6);
+  animation: syncPulse 2s ease-in-out infinite;
+}
+
+.sync-status__dot.is-error {
+  background: #ef4444;
+  animation: none;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.18);
+}
+
+@keyframes syncPulse {
+  0%   { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.55); }
+  70%  { box-shadow: 0 0 0 7px rgba(34, 197, 94, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sync-status__dot { animation: none; }
+}
+
+/* --- Theme Toggle (navbar) --- */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin-left: 0.5rem;
+  padding: 0;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 2px;
+  color: rgba(255, 255, 255, 0.78);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.theme-toggle:hover {
+  color: var(--desy-orange);
+  border-color: rgba(232, 122, 30, 0.6);
+  background: rgba(232, 122, 30, 0.08);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--desy-orange);
+  outline-offset: 2px;
+}
+
+.theme-toggle__icon {
+  display: block;
+}
+
+@media (max-width: 991.98px) {
+  .theme-toggle {
+    margin: 0.6rem 0 0;
+  }
 }

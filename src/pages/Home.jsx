@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import useScrollReveal from '../hooks/useScrollReveal'
 import HeroMark from '../components/HeroMark'
+import CountUp from '../components/CountUp'
 
 export default function Home() {
   const sectionRef = useScrollReveal()
@@ -42,19 +43,19 @@ export default function Home() {
 
                 <div className="hero-stats">
                   <div className="hero-stat">
-                    <div className="stat-number">26<span className="plus">+</span></div>
+                    <div className="stat-number"><CountUp end={26} /><span className="plus">+</span></div>
                     <div className="stat-label">Researchers</div>
                   </div>
                   <div className="hero-stat">
-                    <div className="stat-number">25<span className="plus">+</span></div>
+                    <div className="stat-number"><CountUp end={25} /><span className="plus">+</span></div>
                     <div className="stat-label">Publications</div>
                   </div>
                   <div className="hero-stat">
-                    <div className="stat-number">10<span className="plus">+</span></div>
+                    <div className="stat-number"><CountUp end={10} /><span className="plus">+</span></div>
                     <div className="stat-label">Projects</div>
                   </div>
                   <div className="hero-stat">
-                    <div className="stat-number">10<span className="plus">+</span></div>
+                    <div className="stat-number"><CountUp end={10} /><span className="plus">+</span></div>
                     <div className="stat-label">Years</div>
                   </div>
                 </div>

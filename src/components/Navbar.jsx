@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import logoDesy from '../assets/logo-desy.png'
+import ThemeToggle from './ThemeToggle'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -53,6 +54,9 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/resources" onClick={closeMenu}>Resources</NavLink>
+            </li>
+            <li className="nav-item d-flex align-items-center">
+              <ThemeToggle />
             </li>
           </ul>
         </div>
