@@ -1,0 +1,27 @@
+{
+  "name": "desy-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "DeSy backend — automatic publication ingestion from OpenAlex",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "db:init": "node scripts/init-db.js",
+    "db:seed": "node scripts/seed.js",
+    "authors:resolve": "node scripts/resolve-authors.js",
+    "sync:once": "node scripts/sync-once.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "better-sqlite3": "^11.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "memberId": 1,
+    "name": "Prof. Eng. Liviu MICLEA, PhD",
+    "shortName": "Prof. Miclea",
+    "courses": [
+      "TODO — course 1",
+      "TODO — course 2"
+    ]
+  },
+  {
+    "memberId": 2,
+    "name": "Prof. Eng. Honoriu VĂLEAN, PhD",
+    "shortName": "Prof. Vălean",
+    "courses": [
+      "TODO — course 1",
+      "TODO — course 2"
+    ]
+  },
+  {
+    "memberId": 3,
+    "name": "Prof. Eng. Silviu FOLEA, PhD",
+    "shortName": "Prof. Folea",
+    "courses": [
+      "TODO — course 1",
+      "TODO — course 2"
+    ]
+  },
+  {
+    "memberId": 4,
+    "name": "Prof. Eng. Ovidiu STAN, PhD",
+    "shortName": "Prof. Stan",
+    "courses": [
+      "TODO — course 1",
+      "TODO — course 2"
+    ]
+  },
+  {
+    "memberId": 5,
+    "name": "Assoc. Prof. Eng. ENYEDI Szilárd, PhD",
+    "shortName": "Assoc. Prof. Enyedi",
+    "courses": [
+      "TODO — course 1"
+    ]
+  },
+  {
+    "memberId": 6,
+    "name": "Assoc. Prof. Eng. Dan GOȚA, PhD",
+    "shortName": "Assoc. Prof. Goța",
+    "courses": [
+      "TODO — course 1"
+    ]
+  }
+]

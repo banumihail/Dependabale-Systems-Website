@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import DesyLogo from './DesyLogo'
+import logoDesy from '../assets/logo-desy.png'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -19,9 +19,8 @@ export default function Navbar() {
   return (
     <nav className={`navbar navbar-expand-lg desy-navbar ${scrolled ? 'scrolled' : ''}`} id="main-navbar">
       <div className="container">
-        <Link className="navbar-brand" to="/" onClick={closeMenu}>
-          <DesyLogo size={36} />
-          <span>De<span className="brand-accent">Sy</span></span>
+        <Link className="navbar-brand" to="/" onClick={closeMenu} aria-label="DeSy — Dependable Systems, home">
+          <img src={logoDesy} alt="DeSy" className="brand-logo" />
         </Link>
 
         <button
@@ -42,6 +41,9 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/team" onClick={closeMenu}>Team</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/teaching" onClick={closeMenu}>Teaching</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/publications" onClick={closeMenu}>Publications</NavLink>

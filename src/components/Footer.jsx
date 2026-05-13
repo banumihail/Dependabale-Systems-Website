@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import DesyLogo from './DesyLogo'
+import logoDesy from '../assets/logo-desy.png'
 
 export default function Footer() {
   return (
@@ -8,10 +8,10 @@ export default function Footer() {
         <div className="row g-4">
           {/* Brand Column */}
           <div className="col-lg-4 col-md-6">
-            <div className="d-flex align-items-center gap-2 mb-3">
-              <DesyLogo size={36} />
-              <span style={{ color: '#fff', fontFamily: 'var(--font-heading)', fontWeight: 700, fontSize: '1.2rem' }}>
-                Dependable Systems
+            <div className="d-flex align-items-center gap-3 mb-3">
+              <img src={logoDesy} alt="DeSy" className="footer-logo" />
+              <span style={{ color: '#fff', fontFamily: 'var(--font-heading)', fontWeight: 700, fontSize: '1.1rem', lineHeight: 1.2 }}>
+                Dependable<br />Systems
               </span>
             </div>
             <p style={{ fontSize: '0.88rem', lineHeight: 1.7 }}>
@@ -26,6 +26,7 @@ export default function Footer() {
             <ul className="footer-links">
               <li><Link to="/">Home</Link></li>
               <li><Link to="/team">Team</Link></li>
+              <li><Link to="/teaching">Teaching</Link></li>
               <li><Link to="/publications">Publications</Link></li>
               <li><Link to="/projects">Projects</Link></li>
               <li><Link to="/resources">Resources</Link></li>
@@ -69,7 +70,9 @@ export default function Footer() {
         <div className="footer-divider">
           <div className="footer-bottom">
             <span>© {new Date().getFullYear()} Dependable Systems (DeSy) — UTCN. All rights reserved.</span>
-            <span>Last updated: January 2025</span>
+            <span>
+              {new Date().toLocaleString('en-US', { month: 'long', year: 'numeric' })}
+            </span>
           </div>
         </div>
       </div>

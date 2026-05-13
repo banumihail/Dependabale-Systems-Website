@@ -15,7 +15,7 @@ export default function Projects() {
             <span>/</span>
             <span>Projects</span>
           </div>
-          <h1>Representative Projects</h1>
+          <h1>Representative <em>projects</em></h1>
           <p className="page-subtitle">
             The most representative projects of the last 10 years, spanning national and international funding programs.
           </p>

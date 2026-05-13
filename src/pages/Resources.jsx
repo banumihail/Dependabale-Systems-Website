@@ -14,7 +14,7 @@ export default function Resources() {
             <span>/</span>
             <span>Resources</span>
           </div>
-          <h1>Resources & Services</h1>
+          <h1>Resources <em>&amp;</em> Services</h1>
           <p className="page-subtitle">
             The offer addressed to the economic environment — research, consulting, engineering, and training.
           </p>
@@ -25,8 +25,8 @@ export default function Resources() {
       <section className="section" id="services">
         <div className="container">
           <div className="section-header fade-in">
-            <div className="section-tag">Our Offer</div>
-            <h2>Addressed to the Economic Environment</h2>
+            <div className="section-tag" data-index="01">Our Offer</div>
+            <h2>Addressed to the <em>economic</em> environment</h2>
             <p>Comprehensive services spanning the full spectrum of dependable systems expertise.</p>
           </div>
 

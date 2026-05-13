@@ -1,7 +1,7 @@
-import { useState, useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import useScrollReveal from '../hooks/useScrollReveal'
-import teamData from '../data/team.json'
+import { fetchMembers } from '../services/api'
 
 const categories = [
   { key: 'all', label: 'All Members' },
@@ -13,7 +13,6 @@ const categories = [
 ]
 
 function getInitials(name) {
-  // Extract initials from the person's last name (capitalized word)
   const parts = name.replace(/Prof\.|Eng\.|Assoc\.|PhD|Lecturer|Assist\./g, '').trim().split(' ')
   const caps = parts.filter(p => p.length > 1 && p[0] === p[0].toUpperCase())
   if (caps.length >= 2) {
@@ -24,12 +23,31 @@ function getInitials(name) {
 
 export default function Team() {
   const [activeFilter, setActiveFilter] = useState('all')
+  const [teamData, setTeamData] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
   const sectionRef = useScrollReveal()
+
+  useEffect(() => {
+    let cancelled = false
+    fetchMembers()
+      .then((data) => {
+        if (cancelled) return
+        setTeamData(data || [])
+        setLoading(false)
+      })
+      .catch((err) => {
+        if (cancelled) return
+        setError(err.message)
+        setLoading(false)
+      })
+    return () => { cancelled = true }
+  }, [])
 
   const filteredTeam = useMemo(() => {
     if (activeFilter === 'all') return teamData
     return teamData.filter(m => m.category === activeFilter)
-  }, [activeFilter])
+  }, [teamData, activeFilter])
 
   return (
     <div ref={sectionRef}>
@@ -41,7 +59,7 @@ export default function Team() {
             <span>/</span>
             <span>Team</span>
           </div>
-          <h1>Our Team</h1>
+          <h1>Our <em>team</em></h1>
           <p className="page-subtitle">
             Meet the researchers driving innovation in dependable systems, cyber-physical systems, and intelligent systems.
           </p>
@@ -64,12 +82,19 @@ export default function Team() {
             ))}
           </div>
 
-          <p className="mb-4" style={{
-            color: 'var(--gray-400)',
-            fontSize: '0.88rem'
-          }}>
-            Showing {filteredTeam.length} member{filteredTeam.length !== 1 ? 's' : ''}
-          </p>
+          {error && (
+            <div className="alert alert-warning" role="alert" style={{ borderRadius: '0.5rem' }}>
+              Could not load team: {error}. Make sure the backend is running on port 3001.
+            </div>
+          )}
+
+          {loading ? (
+            <p className="mb-4" style={{ color: 'var(--gray-400)', fontSize: '0.88rem' }}>Loading team…</p>
+          ) : (
+            <p className="mb-4" style={{ color: 'var(--gray-400)', fontSize: '0.88rem' }}>
+              Showing {filteredTeam.length} member{filteredTeam.length !== 1 ? 's' : ''}
+            </p>
+          )}
 
           {/* Cards */}
           <div className="row g-4">
