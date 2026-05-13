@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import useScrollReveal from '../hooks/useScrollReveal'
+import PageCoords from '../components/PageCoords'
 
 export default function Resources() {
   const sectionRef = useScrollReveal()
@@ -14,6 +15,15 @@ export default function Resources() {
             <span>/</span>
             <span>Resources</span>
           </div>
+          <PageCoords
+            segments={[
+              { text: 'SEC.05' },
+              { text: 'Resources' },
+              { text: 'R&D' },
+              { text: 'Consulting' },
+              { text: 'Training', accent: true },
+            ]}
+          />
           <h1>Resources <em>&amp;</em> Services</h1>
           <p className="page-subtitle">
             The offer addressed to the economic environment — research, consulting, engineering, and training.

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import useScrollReveal from '../hooks/useScrollReveal'
+import PageCoords from '../components/PageCoords'
 import teachingData from '../data/teaching.json'
 
 export default function Teaching() {
@@ -17,6 +18,15 @@ export default function Teaching() {
             <span>/</span>
             <span>Teaching</span>
           </div>
+          <PageCoords
+            segments={[
+              { text: 'SEC.02' },
+              { text: 'Teaching' },
+              { text: `${teachingData.length} Professors` },
+              { text: `${totalCourses} Courses` },
+              { text: 'BSc / MSc', accent: true },
+            ]}
+          />
           <h1>What we <em>teach</em></h1>
           <p className="page-subtitle">
             Courses delivered by our professors across the Automation Department —

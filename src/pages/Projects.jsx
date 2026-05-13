@@ -1,6 +1,16 @@
 import { Link } from 'react-router-dom'
 import useScrollReveal from '../hooks/useScrollReveal'
+import PageCoords from '../components/PageCoords'
 import projectsData from '../data/projects.json'
+
+const allProjectYears = projectsData
+  .flatMap((p) => (p.years || '').split('-').map((y) => parseInt(y, 10)))
+  .filter((y) => !Number.isNaN(y))
+const minProjectYear = allProjectYears.length ? Math.min(...allProjectYears) : null
+const maxProjectYear = allProjectYears.length ? Math.max(...allProjectYears) : null
+const projectYearRange = minProjectYear && maxProjectYear
+  ? `${minProjectYear}–${maxProjectYear}`
+  : null
 
 export default function Projects() {
   const sectionRef = useScrollReveal()
@@ -15,6 +25,15 @@ export default function Projects() {
             <span>/</span>
             <span>Projects</span>
           </div>
+          <PageCoords
+            segments={[
+              { text: 'SEC.04' },
+              { text: 'Projects' },
+              { text: `${projectsData.length} Selected` },
+              ...(projectYearRange ? [{ text: projectYearRange }] : []),
+              { text: 'Funded', accent: true },
+            ]}
+          />
           <h1>Representative <em>projects</em></h1>
           <p className="page-subtitle">
             The most representative projects of the last 10 years, spanning national and international funding programs.

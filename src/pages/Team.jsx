@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import useScrollReveal from '../hooks/useScrollReveal'
+import PageCoords from '../components/PageCoords'
 import { fetchMembers } from '../services/api'
 
 const categories = [
@@ -59,6 +60,14 @@ export default function Team() {
             <span>/</span>
             <span>Team</span>
           </div>
+          <PageCoords
+            segments={[
+              { text: 'SEC.01' },
+              { text: 'Team' },
+              { text: `${teamData.length || 26} Members` },
+              { text: 'Live', accent: true },
+            ]}
+          />
           <h1>Our <em>team</em></h1>
           <p className="page-subtitle">
             Meet the researchers driving innovation in dependable systems, cyber-physical systems, and intelligent systems.

@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import useScrollReveal from '../hooks/useScrollReveal'
+import PageCoords from '../components/PageCoords'
 import { fetchPublications, fetchPatents } from '../services/api'
 
 const typeFilters = ['All', 'journal', 'conference']
@@ -70,6 +71,13 @@ export default function Publications() {
 
   const totalForHistogram = allPublications.length || publications.length
 
+  const yearRange = useMemo(() => {
+    if (!yearBars.length) return null
+    const first = yearBars[0].year
+    const last = yearBars[yearBars.length - 1].year
+    return first === last ? `${first}` : `${first}–${last}`
+  }, [yearBars])
+
   const filteredPubs = useMemo(() => {
     if (!searchQuery.trim()) return publications
     const q = searchQuery.toLowerCase()
@@ -90,6 +98,15 @@ export default function Publications() {
             <span>/</span>
             <span>Publications</span>
           </div>
+          <PageCoords
+            segments={[
+              { text: 'SEC.03' },
+              { text: 'Publications' },
+              { text: totalForHistogram ? `${totalForHistogram} Works` : 'Works' },
+              ...(yearRange ? [{ text: yearRange }] : []),
+              { text: 'OpenAlex', accent: true },
+            ]}
+          />
           <h1>Publications <em>&amp;</em> Results</h1>
           <p className="page-subtitle">
             Automatically synchronized from OpenAlex — authored or co-authored by DeSy group members.
